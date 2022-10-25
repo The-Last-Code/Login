@@ -5,11 +5,13 @@
     //     exit;
     // }
 	session_start();
+
+    print_r($_SESSION);exit;
+	echo $_SESSION['login'];exit;
 	if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == true))
 	{
   		header('location:../View/LoginCadastro.php');
   	}
-
 ?>
 
 <!DOCTYPE html>

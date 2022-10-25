@@ -23,13 +23,13 @@ require_once '../Conection/Conn.php';
 
             if($sql->rowCount() > 0)
             { 
-                $_SESSION['login'] = $cpf_cientista;
+                $_SESSION['login'] =$cpf_cientista;
                 $_SESSION['senha'] = $snh_cientista;
-                header('Location:../View/Home.php ');
-                //return true; 
+                header('Location:../View/Home.php');
+                //return true;
             }
             else
-            {
+            { 
                 return false; 
             }
         }

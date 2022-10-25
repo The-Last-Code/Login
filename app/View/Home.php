@@ -2,6 +2,11 @@
     include ('../Dao/Client.php');
     require_once('../Controllers/clientsController.php');
     require_once ('../Conection/Conn.php');
+    session_start();
+
+    print_r($_SESSION);exit;
+
+
     $controller=new clientsController();
 
     $action=!empty($_GET['a'])?$_GET['a']:'getAll';
